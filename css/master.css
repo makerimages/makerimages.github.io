@@ -44,4 +44,11 @@ html, body {
     background-color: #ecf0f1;
     padding: 5px;
     box-sizing: border-box;
+    font-size: 32px;
+}
+
+.icon-social {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 3px;
 }
