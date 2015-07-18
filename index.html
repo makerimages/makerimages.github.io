@@ -1,29 +1,114 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Makerimages</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+        <link rel="stylesheet" href="css/master.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-        <link rel="stylesheet" href="css/master.css">
+
     </head>
     <body>
-        <header>
-            <ul class ="header-nav">
-                <a href="index.html"><li>Home</li></a>
-                <a href="projects.html"><li>Projects</li></a>
-                <a href="http://livecoding.tv/makerimages"><li>Stream</li></a>
-            </ul>
-        </header>
-        <div class ="about-panel">
-            <img class="avatar" src="res/makerimages.png"/><br>
-            <h2 class ="about-title">Makerimages</h2>
-            <div class = "about-text">Hi, I'm a 17 yr old IT systems student, developer and indie game dev from Estonia. What you can see on this page are the things
-            that I have done or what I am currently working on.</div>
-        </div><br>
-        <div class="social-panel">
-            <i class="fa fa-envelope-o icon-social"></i>
-            <a href="https://github.com/makerimages"><i class="fa fa-github icon-social"></i></a>
-            <a href="http://twitter.com/makerimages"><i class="fa fa-twitter icon-social"></i></a>
+        <main>
+            <div class="navbar-fixed">
+                <nav>
+                    <div class="nav-wrapper grey darken-3">
+                        <img class="brand-logo"src="res/makerimages.png">
+                        <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li ><a class="" href="projects.html"><i class="material-icons left">code</i>Projects</a></li>
+                            <li><a href="http://livecoding.tv/makerimages"><i class="material-icons left">videocam</i>Livestream</a></li>
+                        </ul>
+                        <ul class="side-nav" id="mobile-nav">
+                            <li ><a class="" href="projects.html">Projects</a></li>
+                            <li><a href="http://livecoding.tv/makerimages">Livestream</a></li>
+                            <li><a href="collapsible.html">Javascript</a></li>
+                            <li><a href="mobile.html">Mobile</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col s12 m12 l3">
+                    <div class="card small hoverable">
+                        <div class="card-image">
+                            <img src="res/makerimages.png">
+                            <span class="card-title black-text">About me</span>
+                        </div>
+                        <div class="card-content">
+                                I am a self-thaught developer. Mostly focusing on Web development languages
+                                and Java. Also familiar with C. This page serves as a place to
+                                beautifully display things I'm working on.
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m12 l3">
+                    <div class="card-panel hoverable">
+                        <div class="card-content">
+                            <h5>Web Skills</h5><br>
+                            <label>HTML5 & CSS3<div class="badge specialbadge">75%</div></label>
+                            <div class="progress grey lighten-1">
+                                <div class="determinate green" style="width: 75%"></div>
+                            </div>
+                            <label>Javascript & JQuery 2<div class="badge specialbadge">70%</div></label>
+                            <div class="progress grey lighten-1">
+                                <div class="determinate green" style="width: 70%"></div>
+                            </div>
+                            <label>Bootstrap, Materialize, etc.<div class="badge specialbadge">40%</div></label>
+                            <div class="progress grey lighten-1">
+                                <div class="determinate green" style="width: 40%"></div>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l3">
+                <div class="card-panel hoverable">
+                    <div class="card-content">
+                        <h5>Backend/Other</h5><br>
+                        <label>Java<div class="badge specialbadge">50%</div></label>
+                        <div class="progress grey lighten-1">
+                            <div class="determinate green" style="width: 50%"></div>
+                        </div>
+                        <label>Node.js<div class="badge specialbadge">30%</div></label>
+                        <div class="progress grey lighten-1">
+                            <div class="determinate green" style="width: 30%"></div>
+                        </div>
+                        <label>Grunt<div class="badge specialbadge">10%</div></label>
+                        <div class="progress grey lighten-1">
+                            <div class="determinate green" style="width: 10%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m12 l3">
+            </div>
         </div>
 
+        <div class="fixed-action-btn" style="bottom: 15px; right: 24px;">
+            <a class="btn-floating btn-large redindigo">
+                <i class="large material-icons">chat_bubble_outline</i>
+            </a>
+            <ul>
+                <li><a class="btn-floating grey darken-3"><i class="fa fa-github"></i></a></li>
+                <li><a class="btn-floating teal"><i class="material-icons">videocam</i></a></li>
+                <li><a class="btn-floating blue"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="btn-floating green"><i class="material-icons">email</i></a></li>
+            </ul>
+        </div>
+    </main>
+        <footer class="page-footer grey darken-3">
+            <div class="footer-copyright">
+                <div class="container">
+                    Copyright © 2015  Makerimages
+                </div>
+            </div>
+        </footer>
+        <script src="js/site.js"></script>
     </body>
 </html>
